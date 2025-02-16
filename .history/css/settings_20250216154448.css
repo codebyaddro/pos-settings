@@ -5,37 +5,37 @@
 /* -- root css -- */
 
 :root {
+    --gray-white: #F0F1F2; /* For body*/
+    --white: #FFFFFF;
     --black: #000000;
     --gray-black: #DDDDDD;
-    --gray-white: #F0F1F2; /* For body*/
-    --green: #008000;
-    --lp-green: #F8FAF8;
-    --lt-black-op: #21252350;
-    --lt-black: #212523;
     --lt-gray: #EFEFEF;
-    --lt-green: #e9f6ec;
-    --lt-orange: #FD7E14;
-    --lt-red: #fbeaec;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
     --main-green: #157343;
     --main-lt: #37A000;
+    --lt-orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --lp-green: #F8FAF8;
     --red: #FF0000;
-    --white: #FFFFFF;
+    --lt-red: #fbeaec;
 }
 
 /* -- universal style -- */
 
 * {
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
 }
 
 /* -- web app cursor element selection style -- */
 
 ::selection {
-    background-color: var(--main-lt);
     color: var(--white);
+    background-color: var(--main-lt);
 }
 
 /* -- settings top menu bar style -- */
@@ -43,30 +43,30 @@
 /* -- menu block style -- */
 
 .cba-settings-top-menubar > ul {
-    align-items: flex-start;
-    background-color: var(--white);
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
+    align-items: flex-start;
+    background-color: var(--white);
     padding: 10px 0px 7.5px 0px;
+    list-style-type: none;
 }
 
 /* -- main menu and their icon style -- */
 
 .cba-settings-top-menubar > ul > li {
-    align-items: center;
-    border-bottom: 2px solid var(--white);
-    cursor: pointer;
     display: flex;
-    font-size: 1rem;
     gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--white);
 }
 
 /* -- main manu icon style -- */
 
 .cba-settings-top-menubar > ul > li > .cba-top-menu-arrow {
-    color: var(--lt-black);
     font-size: 1.5rem;
+    color: var(--lt-black);
 }
 
 /* -- main menu hover style -- */
@@ -78,18 +78,18 @@
 /* -- menu three style -- */
 
 .cba-settings-top-menubar > ul > li > a {
-    color: var(--black);
     text-decoration: none;
+    color: var(--black);
 }
 
 /* -- settings top menu bar dropdown style -- */
 
 .cba-settings-top-menubar > ul > li > ul {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    gap: 7.5px;
     list-style-type: none;
+    display: flex;
+    gap: 7.5px;
+    flex-direction: column;
+    background-color: var(--white);
     padding: 2.5px 12.5px;
 }
 
@@ -110,9 +110,9 @@
 /* -- dropdown menus text style -- */
 
 .cba-settings-top-menubar > ul > li > ul > li > a {
+    text-decoration: none;
     color: var(--black);
     font-size: 0.875rem;
-    text-decoration: none;
     white-space: nowrap;
 }
 

@@ -85,11 +85,11 @@
 /* -- settings top menu bar dropdown style -- */
 
 .cba-settings-top-menubar > ul > li > ul {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    gap: 7.5px;
     list-style-type: none;
+    display: flex;
+    gap: 7.5px;
+    flex-direction: column;
+    background-color: var(--white);
     padding: 2.5px 12.5px;
 }
 
@@ -110,9 +110,9 @@
 /* -- dropdown menus text style -- */
 
 .cba-settings-top-menubar > ul > li > ul > li > a {
+    text-decoration: none;
     color: var(--black);
     font-size: 0.875rem;
-    text-decoration: none;
     white-space: nowrap;
 }
 

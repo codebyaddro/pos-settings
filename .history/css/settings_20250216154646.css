@@ -110,9 +110,9 @@
 /* -- dropdown menus text style -- */
 
 .cba-settings-top-menubar > ul > li > ul > li > a {
+    text-decoration: none;
     color: var(--black);
     font-size: 0.875rem;
-    text-decoration: none;
     white-space: nowrap;
 }
 
