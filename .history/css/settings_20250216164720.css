@@ -1,0 +1,147 @@
+/* -- font link -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root css -- */
+
+:root {
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --gray-white: #F0F1F2; /* For body*/
+    --green: #008000;
+    --lp-green: #F8FAF8;
+    --lt-black-op: #21252350;
+    --lt-black: #212523;
+    --lt-gray: #EFEFEF;
+    --lt-green: #e9f6ec;
+    --lt-orange: #FD7E14;
+    --lt-red: #fbeaec;
+    --main-green: #157343;
+    --main-lt: #37A000;
+    --red: #FF0000;
+    --white: #FFFFFF;
+}
+
+/* -- universal style -- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- web app cursor element selection style -- */
+
+::selection {
+    background-color: var(--main-lt);
+    color: var(--white);
+}
+
+/* -- settings top menu bar style -- */
+
+/* -- menu block style -- */
+
+.cba-settings-top-menubar > ul {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px 0px 7.5px 0px;
+}
+
+/* -- main menu and their icon style -- */
+
+.cba-settings-top-menubar > ul > li {
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    dssdk
+    gap: 5px;
+}
+
+/* -- main manu icon style -- */
+
+.cba-settings-top-menubar > ul > li > .cba-top-menu-arrow {
+    color: var(--lt-black);
+    font-size: 1.5rem;
+}
+
+/* -- main menu hover style -- */
+
+.cba-settings-top-menubar > ul > li:hover {
+    border-bottom: 2px solid var(--main-lt);
+}
+
+/* -- menu three style -- */
+
+.cba-settings-top-menubar > ul > li > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* -- settings top menu bar dropdown style -- */
+
+.cba-settings-top-menubar > ul > li > ul {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style-type: none;
+    padding: 2.5px 12.5px;
+}
+
+.cba-settings-top-menubar > ul > li > ul {
+    display: none;
+}
+
+/* -- main manus dropdown style -- */
+
+.cba-settings-top-menubar > ul > .cba-stm-one:hover > .cba-stm-one-dd {
+    display: block;
+}
+
+.cba-settings-top-menubar > ul > .cba-stm-two:hover > .cba-stm-two-dd {
+    display: block;
+}
+
+/* -- dropdown menus text style -- */
+
+.cba-settings-top-menubar > ul > li > ul > li > a {
+    color: var(--black);
+    font-size: 0.875rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* -- dropdown menus hover style -- */
+
+.cba-settings-top-menubar > ul > li > ul > li > a:hover {
+    text-decoration: underline 1.5px var(--main-lt);
+}
+
+/* -- dropdown menu position style -- */
+
+.cba-settings-top-menubar > ul > .cba-stm-one {
+    position: relative;
+}
+
+.cba-settings-top-menubar > ul > li > .cba-stm-one-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;   
+}
+
+.cba-settings-top-menubar > ul > .cba-stm-two {
+    position: relative;
+}
+
+.cba-settings-top-menubar > ul > li > .cba-stm-two-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    width: 177px;
+}
