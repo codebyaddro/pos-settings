@@ -62,7 +62,13 @@
     gap: 5px;
 }
 
-/* -- main manu icon style -- */
+/* -- active main menu style -- */
+
+.cba-settings-top-menubar > ul > li.cba-stm-one {
+    color: var(--main-lt);
+}
+
+/* -- main menu icon style -- */
 
 .cba-settings-top-menubar > ul > li > .cba-top-menu-arrow {
     color: var(--lt-black);
@@ -116,6 +122,12 @@
     white-space: nowrap;
 }
 
+/* -- dropdown active menu style -- */
+
+.cba-settings-top-menubar > ul > li > ul > li > a.cba-stm-one-dd-active {
+    color: var(--main-lt);
+}
+
 /* -- dropdown menus hover style -- */
 
 .cba-settings-top-menubar > ul > li > ul > li > a:hover {
@@ -143,4 +155,24 @@
     top: 27.5px;
     left: 0px;
     width: 177px;
+}
+
+/* -- settings inner container style -- */
+
+.cba-stng-incon-middlepart-text-input-field {
+    display: flex;
+}
+
+.cba-stng-incon-mp-tif-col1-input-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.cba-stng-incon-mp-tif-col2-input-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 10px;
 }
