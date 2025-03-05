@@ -1,0 +1,418 @@
+/* -- font link -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root css -- */
+
+:root {
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --gray-white: #F0F1F2; /* For body*/
+    --green: #008000;
+    --lp-green: #F8FAF8;
+    --lt-black-op: #21252350;
+    --lt-black: #212523;
+    --lt-gray: #EFEFEF;
+    --lt-green: #e9f6ec;
+    --lt-orange: #FD7E14;
+    --lt-red: #fbeaec;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --red: #FF0000;
+    --white: #FFFFFF;
+}
+
+/* -- universal style -- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--lt-gray);
+}
+
+/* -- web app cursor element selection style -- */
+
+::selection {
+    background-color: var(--m-lt);
+    color: var(--white);
+}
+
+/* -- settings top menu bar style -- */
+
+.cba-actilog-top-menubar {
+    background-color: var(--white);
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* -- menu block style -- */
+
+.cba-actilog-top-menubar > ul {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px 0px 7.5px 0px;
+}
+
+/* -- main menu and their icon style -- */
+
+.cba-actilog-top-menubar > ul > li {
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    gap: 5px;
+}
+
+/* -- active main menu style -- */
+
+.cba-actilog-top-menubar > ul > li.cba-actilogtm-three a {
+    color: var(--m-lt);
+}
+
+/* -- main menu icon style -- */
+
+.cba-actilog-top-menubar > ul > li > .cba-top-menu-arrow {
+    color: var(--lt-black);
+    font-size: 1.5rem;
+}
+
+/* -- main menu hover style -- */
+
+.cba-actilog-top-menubar > ul > li:hover {
+    border-bottom: 2px solid var(--m-lt);
+}
+
+/* -- menu three -- */
+
+.cba-actilog-top-menubar > ul > li > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* -- settings top menu bar dropdown style -- */
+
+.cba-actilog-top-menubar > ul > li > ul {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style-type: none;
+    padding: 2.5px 12.5px;
+}
+
+.cba-actilog-top-menubar > ul > li > ul {
+    display: none;
+}
+
+/* -- main manus dropdown style -- */
+
+.cba-actilog-top-menubar > ul > .cba-actilogtm-one:hover > .cba-actilogtm-one-dd {
+    display: block;
+}
+
+.cba-actilog-top-menubar > ul > .cba-actilogtm-two:hover > .cba-actilogtm-two-dd {
+    display: block;
+}
+
+/* -- dropdown menus text style -- */
+
+.cba-actilog-top-menubar > ul > li > ul > li {
+    padding-bottom: 2.5px;
+}
+
+.cba-actilog-top-menubar > ul > li > ul > li > a {
+    color: var(--black);
+    font-size: 0.875rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* -- dropdown active menu style -- */
+
+.cba-actilog-top-menubar > ul > li > ul > li > a.cba-actilogtm-one-dd-active {
+    color: var(--m-lt);
+}
+
+/* -- dropdown menus hover style -- */
+
+.cba-actilog-top-menubar > ul > li > ul > li > a:hover {
+    text-decoration: underline 1.5px var(--m-lt);
+}
+
+/* -- dropdown menu position style -- */
+
+.cba-actilog-top-menubar > ul > .cba-actilogtm-one {
+    position: relative;
+}
+
+.cba-actilog-top-menubar > ul > li > .cba-actilogtm-one-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.cba-actilog-top-menubar > ul > .cba-actilogtm-two {
+    position: relative;
+}
+
+.cba-actilog-top-menubar > ul > li > .cba-actilogtm-two-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    width: 177px;
+    z-index: 1;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* -- activity log details container style -- */
+
+.cba-actilog-details-container {
+    background-color: var(--white);
+}
+
+.cba-actilog-details-toppart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--gray-black);
+}
+
+.cba-actilog-details-toppart > .cba-actilog-details-toppart-heading > h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* -- btn style -- */
+
+.cba-actilog-dt-delete-filter-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.cba-actilog-dt-delete-filter-btn > button:nth-child(1) {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 2.5px;
+    padding: 7px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.cba-actilog-dt-delete-filter-btn > button:nth-child(2) {
+    background-color: var(--m-green);
+    color: var(--white);
+    border: none;
+    border-radius: 2.5px;
+    padding: 7px 10px 5px 10px;
+    cursor: pointer;
+}
+
+/* -- sub-con style -- */
+.cba-actilog-details-subcon {
+    padding: 25px;
+}
+
+.cba-addfb-input-btn {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+    padding-bottom: 25px;
+}
+
+.cba-addfb-input {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.cba-addfb-input > input {
+    border: 1px solid var(--lt-gray);
+    border-radius: 2.5px;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+}
+
+.cba-addfb-input > input:focus {
+    outline: 1px solid var(--m-lt);
+}
+
+.cba-addfb-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cba-addfb-btn input:nth-child(1) {
+    background-color: var(--m-green);
+    color: var(--white);
+    border: none;
+    border-radius: 2.5px;
+    padding: 7px 10px 5px 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.cba-addfb-btn input:nth-child(2) {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 2.5px;
+    padding: 7px 10px 5px 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.cba-adsubcon-ic-list-filter-searchbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.cba-adsubcon-ic-list-filter-searchbox > .cba-adscifl-short-dpdwn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cba-adsubcon-ic-list-filter-searchbox > .cba-adscifl-short-dpdwn > h3 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.cba-adsubcon-ic-list-filter-searchbox > .cba-adscifl-short-dpdwn > select {
+    border: 1px solid var(--gray-black);
+    border-radius: 2.5px;
+    appearance: none;
+    padding: 5px 8px;
+    &:focus {
+        outline: 1px solid var(--m-lt);
+    }
+}
+
+.cba-adsubcon-ic-list-filter-searchbox > .cba-adscifl-search-box {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.cba-adsubcon-ic-list-filter-searchbox > .cba-adscifl-search-box > label {
+    display: flex;
+    font-size: 0.875rem;
+}
+
+.cba-adsubcon-ic-list-filter-searchbox > .cba-adscifl-search-box > input {
+    border: 1px solid var(--lt-gray);
+    border-radius: 2.5px;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    outline: none;
+}
+
+/* -- table style -- */
+
+.cba-actilog-details-table {
+    margin-top: 25px;
+}
+.cba-actilog-details-table > table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cba-actilog-details-table > table > thead > tr > th {
+    border: 1px solid var(--gray-black);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.cba-actilog-details-table > table > thead > tr > th > label > #alldataselected {
+    accent-color: var(--m-lt);
+}
+
+.cba-actilog-details-table > table > tbody > tr > td {
+    border: 1px solid var(--gray-black);
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.cba-actilog-details-table > table > tbody > tr:hover {
+    background-color: var(--gray-white);
+}
+
+/* -- edit icon style */
+
+.cba-actilog-details-table > table > tbody > tr > td  > .cba-adt-edit-icon {
+    font-size: 1rem;
+    color: var(--green);
+    background-color: var(--lt-green);
+    border: 1px solid var(--green);
+    padding: 7.5px;
+}
+
+.cba-actilog-details-table > table > tbody > tr > td  > .cba-adt-edit-icon:hover {
+    background-color: var(--gray-black);
+}
+
+.cba-actilog-details-table > table > tfoot > tr {
+    background-color: var(--gray-black);
+}
+
+.cba-actilog-details-table > table > tfoot > tr > td {
+    border: 1px solid var(--gray-black);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+/* bottom part */
+
+.cba-adtl-entries-count-pagechange-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.cba-adtl-pagechange-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cba-adtl-pagechange-btn > button {
+    color: var(--black);
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: var(--gray-black);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px 5px 10px;
+}
+
+.cba-adtl-pagechange-btn > p {
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: var(--m-lt);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 13px 5px 13px;
+}
